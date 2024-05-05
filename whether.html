@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: 'Lato', sans-serif;
+            display: flex;
+            justify-content: center;
+            background-color: black;
+            background-image: url(./w.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        
+        .container {
+            width: 300px;
+            height: 68vh;
+            padding: 22px;
+            text-align: center;
+            border-radius: 5px;
+            margin-top: 5%;
+            background-color: rgba(125, 121, 246, 0.7);
+        }
+        
+        img {
+            margin-top: 3%;
+            width: 250px;
+        }
+        
+        #temp {
+            font-size: 40px;
+            margin-top: 10px;
+        }
+        
+        #type {
+            font-size: 26px;
+            margin-top: -16px;
+        }
+        
+        .srh {
+            display: flex;
+            margin-top: 11px;
+        }
+        
+        input {
+            width: 200px;
+            padding: 16px;
+            border-radius: 16px;
+            height: 8px;
+            border: none;
+            outline: none;
+            font-size: 18px;
+            background-color: lightblue;
+        }
+        
+        button {
+            width: 70px;
+            height: 35px;
+            border-radius: 6px;
+            border: none;
+            outline: none;
+            font-size: 18px;
+            background-color: rgb(191, 235, 250);
+            margin-top: 2px;
+            margin-inline: 9px;
+        }
+        
+         ::placeholder {
+            color: black;
+        }
+        
+        #city {
+            margin-top: 20px;
+            font-size: 33px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="srh">
+            <input type="text" id="inp" value="" placeholder="enter location">
+            <button onclick="myFun()">search</button>
+        </div>
+        <h2 id="city"></h2>
+        <img src="error1.png" alt="" id="img">
+        <h2 id="temp"></h2>
+        <h2 id="type"></h2>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="whether.js"></script>
+</body>
+
+</html>
